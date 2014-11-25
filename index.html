@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lame Invaders!</title>
+	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	
+</head>
+<body>
+	<img class="hidden" src="enemyHit.png" />
+	<img class="hidden" src="friendHit.png" />
+	<audio id="cat" src="cat.mp3" preload="auto"></audio>
+	<audio id="dog" src="dog.mp3" preload="auto"></audio>
+	<audio id="laser" src="laser.mp3" preload="auto"></audio>
+	<audio id="laugh" src="laugh.mp3" preload="auto"></audio>
+	<audio id="musicLoop" src="musicLoop.mp3" preload="auto"></audio>
+<header><section id="header"><p id="score"></p><p id="countdown">100 seconds left</p></section></header>
+	<section id="left">
+		<a class="muteToggle" id="muteMusic">Music: ON</a>
+		<a class="muteToggle" id="muteSound">Sound: ON</a>
+		<section id="autokill">
+			<p><strong>Cheat mode on!</strong></p><br />
+			<p>Autokill</p>
+			<p id="autoKillEnemy">Enemies (T): OFF</p>
+			<p id="autoKillFriend">Friends (Y): OFF</p>
+		</section>
+	</section>
+	<main id="stage">
+		<section id="nojs">
+			<h1>I'm really sorry...</h1>
+			<p>...but this game needs JavaScript, and you haven't enabled it :'(</p>
+		</section>
+		<section id="postGame">
+			<h1>GAME OVER</h1>
+			<p id="finalScore"><strong>Final score:</strong> number</p>
+			<p id="conclusion"><strong>Conclusion:</strong> You stink!</p>
+			<h2 id="postMessage" class="blink">Press space to return to menu...</h2>
+		</section>
+		<section id="mainmenu">
+			<h1>Lame Invaders!</h1>
+			<p><strong>Instructions:</strong> Shoot Barbara Streisand, avoid the cats!</p>
+			<p id="sizeInstruct">You can change the size of the targets below - smaller size means more points!</p>
+			<p><strong>Controls:</strong> Move with mouse, shoot with mouse...</p>
+			<p><strong>Size: </strong><img id="slider"><img id="sliderBar"></img></img></p>
+			<p><img id="preview" src="enemy.png" /></p>
+			<h2 class="blink">Press space to start!!!</h2>
+		</section>
+		<section id="playgame">
+			
+		</section>
+		<figure id="player"></figure>
+		<figure id="bullet"></figure>
+		<figure id="enemy"><img id="enemyPic" src="enemy.png" /></figure>
+		<figure id="friend"><img id="friendPic" src="friend.png" /></figure>
+		<script src="lame.js"></script>
+	</main>
+	<section id="right"></section>
+	<footer>Copyright &#169; 2014 - Mikkel Ottesen</footer>
+</body>
+</html>
